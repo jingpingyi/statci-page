@@ -1,0 +1,340 @@
+/*common css*/
+
+body,ul,li,h1,h2,h3 {
+  margin: 0; padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+p {
+  font-size: 14px;
+}
+ul {
+  list-style: none;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.layout,
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.row {
+  margin: 50px 0;
+}
+/*header and navbar css*/
+html,
+body {
+  height: 100%;
+}
+header {
+  height: 100%;
+  background: #FED136 url(./pictures/theme.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.navbar .menu {
+  float: right;
+  font-size: 30px;
+}
+.navbar .logo {
+  float: left;
+  font-size: 30px;
+  color: #FF9164;
+  margin: 20px;
+}
+.menu {
+  margin-top: 10px;
+}
+.menu>li {
+  float: left;
+  margin: 10px;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+}
+.menu>li:hover a {
+  color: #34C2CB;
+}
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+}
+.intro h2 {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+.intro h3 {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 75px;
+  line-height: 75px;
+  margin-bottom: 50px;
+}
+.button {
+  color: #fff;
+  font-size: 30px;
+  background-color: rgba(255,145,100,0.85);
+  padding: 14px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: rgb(255,145,100);
+}
+/*service section scc*/
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+section h3 {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 75px;
+  font-style: italic;
+  font-weight: 400;
+}
+section {
+  margin-top: 100px;
+  text-align: center;
+  color: #323232;
+}
+.text-muted {
+  color: #777;
+}
+.in-row-3 {
+  float: left;
+  width: 33.33%;
+}
+.icon-style-1 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #FED136;
+  border-radius: 50px;
+}
+.icon-style-1 .iconfont {
+  font-size: 70px;
+  color: #fff;
+}
+
+/*porlfolio section css*/
+.portfolio-iteam {
+  width: calc(33.3% - 20px);
+  margin: 10px;
+  float: left;
+  position: relative;
+}
+.portfolio-iteam a {
+  height: 200px;
+  display: block;
+  position: relative;
+}
+.portfolio-iteam img{
+  width: 100%;
+  height: 100%;
+}
+.icon-hover {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  background-color: #FED136;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.icon-hover:hover {
+  opacity: 0.7;
+
+}
+.icon-hover .iconfont {
+  font-size: 80px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+}
+.portfolio-iteam figcaption {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/*about section css*/
+.timeline > li {
+  margin: 100px 0;
+  position: relative;
+  color: #666;
+}
+.timeline > li::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.timeline > li > img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid lightgreen;
+  border-radius: 50%;
+}
+.timeline >li:nth-child(odd) > img {
+  float: right;
+}
+.timeline >li:nth-child(odd) {
+  text-align: right;
+  padding-right: calc(50% - 75px);
+}
+.timeline >li:nth-child(odd) .timeline-panel {
+  margin-right: 160px;
+}
+.timeline >li:nth-child(even) > img {
+  float: left;
+}
+.timeline >li:nth-child(even){
+  text-align: left;
+  padding-left: calc(50% - 75px);
+}
+.timeline >li:nth-child(even) .timeline-panel {
+  margin-left: 160px;
+}
+.timeline >li::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 120px;
+  background-color: lightgreen;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -1px;
+}
+.timeline >li:last-child {
+  color: #ffffff;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+  padding: 0;
+  border: 5px solid lightgreen;
+  border-radius: 50%;
+  margin-left: calc(50% - 75px);
+  background-color: #FED136;
+}
+.timeline >li:last-child::before {
+  height: 0;
+}
+.timeline >li:last-child h4 {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+}
+/*team section css*/
+.member img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+}
+.list-inline > li {
+  display: inline-block;
+}
+.list-inline > li > a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  line-height: 40px;
+  background: #000;
+  color: #fff;
+  transition: all .3s;
+}
+.list-inline {
+  text-align: center;
+}
+.list-inline li .iconfont {
+  font-size: 20px;
+}
+.list-inline a:hover {
+  background: #FED136;
+}
+.text-again {
+  margin: 40px 0;
+  color: #666;
+}
+/*contact section css*/
+.contact {
+  background: #000 url(pictures/earth.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+.in-row-2 {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+.form-control {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #666;
+  outline: none;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.contact textarea {
+  height: 211px;
+}
+.form-control:focus {
+  border-color: #FED136;
+}
+.success .btn {
+  display: inline-block;
+  background: rgba(253,196,23,.9);
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.success .btn:hover {
+  background-color: rgba(253,196,23,1);
+}
+/*footer css*/
+.footer-list li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.footer-list li a {
+  color: #FED136;
+}
+.footer-list li a:hover {
+  text-decoration: underline;
+}
